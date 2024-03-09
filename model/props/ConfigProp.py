@@ -24,6 +24,7 @@ def from_json(prop: dict):
         print("Unknown property kind:" + str(prop["kind"]))
     return my_prop
 
+
 @dataclass
 class ConfigProp:
     id: int = field()
@@ -34,4 +35,3 @@ class ConfigProp:
 
     def __lt__(self, other):
         return self.priority < other.priority
-
