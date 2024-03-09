@@ -60,7 +60,7 @@ class Retcon:
                         de_prop = ConfigProp.from_json(prop)
 
     def on_open(self, ws):
-        print("WebSocket connection opened")
+        print("WebSocket connection opened.")
 
     def on_message(self, ws, message):
         print("Message received:", message)
@@ -70,4 +70,4 @@ class Retcon:
         print("WebSocket error:", error)
 
     def on_close(self, ws, status, message):
-        print("WebSocket connection closed")
+        print("WebSocket connection closed.")
