@@ -28,10 +28,12 @@ def from_json(prop: dict):
 @dataclass
 class ConfigProp:
     id: int = field()
+    name: string = field()
     priority: int = field()
     kind: string = field()
     nullable: bool = field()
     val: any = field()
+    dval: any = field()
 
     def __lt__(self, other):
         return self.priority < other.priority
